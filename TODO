@@ -1,0 +1,17 @@
+# TODO
+bash/wine.sh, line 23:
+'ToDo: Find a way to detect ARM systems'
+We need a way to detect ARM systems. this systems not using i386 libs.
+
+bash/wine.sh, line 37:
+'ToDo: Find a way to detect distro & auto setting $1 & $2'
+
+bash/wine.sh, line 88:
+'ToDo: Find a way to detect nouveau for not installing mesa-vulkan-drivers & dxvk (nouveau does not support Vulkan!)'
+
+bash/wine.sh, line 89:
+'ToDo: Find a way to detect NVIDIA Proprietary driver. its not using mesa-vulkan-driver!'
+not installing "mesa-vulkan-drivers" if NVIDIA Proprietary is used.
+
+
+## INCOMPLATE
