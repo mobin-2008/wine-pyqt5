@@ -37,14 +37,14 @@ fi
 # ToDo: Find a way to detect distro & auto setting $1 & $2
 # $1 = ubuntu  ## Distro name (ubuntu, debian, devuan &...)
 # S2 = jammy ## Distro code name (jammy, bullseye, ceres & ...)
-#wget -nc https://dl.winehq.org/wine-builds/$1/dists/$2/winehq-$2.sources
+#wget -nc https://dl.winehq.org/wine-builds/"$1"/dists/"$2"/winehq-"$2".sources
 #if [ $? -ne 0 ]  ; then
 #  #echo "[INFO] Downloading wine repo info is Done!"
 #  exit 0
 #fi
 
 # Adding wine repo info to apt sources
-#sudo mv winehq-$2.sources /etc/apt/sources.list.d/
+#sudo mv winehq-"$2".sources /etc/apt/sources.list.d/
 #if [ $? -ne 0 ]  ; then
 #  #echo "[INFO] Adding wine repo info to apt sources is Done!"
 #  exit 0
@@ -75,7 +75,7 @@ fi
 # Installing winehq-[staging or devel or stable]
 # By Default, installing winehq-staging
 # $3 = staging
-#sudo apt install winehq-$3 --install-recommends
+#sudo apt install winehq-"$3" --install-recommends
 
 # 1 (Default):
 sudo apt install --install-recommends wine-stable -y
